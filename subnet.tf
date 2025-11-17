@@ -1,0 +1,21 @@
+resource "aws_subnet" "db_1" {
+  vpc_id = aws_vpc.main.id
+  cidr_block = "10.0.1.0/24"
+  availability_zone = "us-east-1a"
+  map_public_ip_on_launch = true
+  tags = {
+    Name = "db_1"
+    ManagedBy = "Kyrna"
+  }
+}
+
+resource "aws_subnet" "db_2" {
+  vpc_id = aws_vpc.main.id
+  cidr_block = "10.0.1.0/24"
+  availability_zone = "us-east-1a"
+  map_public_ip_on_launch = true
+  tags = {
+    Name = "db_2"
+    ManagedBy = "Kyrna"
+  }
+}
