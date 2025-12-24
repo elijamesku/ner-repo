@@ -1,4 +1,4 @@
-resource "aws_s3_bucket" "main" {
+resource "aws_s3_bucket" "main_kcgk0" {
   bucket = "my-terraform-bucket-${random_id.bucket_suffix.hex}"
   tags = {
     Name = "Main S3 Bucket"
