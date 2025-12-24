@@ -1,4 +1,4 @@
-resource "aws_vpc" "main" {
+resource "aws_vpc" "main_kcgk2" {
   cidr_block = "10.0.0.0/16"
   enable_dns_hostnames = true
   enable_dns_support = true
@@ -7,7 +7,7 @@ resource "aws_vpc" "main" {
   }
 }
 
-resource "aws_vpc" "main" {
+resource "aws_vpc" "main_kcgk3" {
   cidr_block = "10.0.0.0/16"
   enable_dns_hostnames = true
   enable_dns_support = true
